@@ -1,0 +1,24 @@
+{
+    "name": "keyrus-test-dacj",
+    "description": "A Front-end test for Keyrus",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iarna/aproba.git"
+    },
+    "author": {
+        "name": "Diego A. Castillo J.",
+        "email": "djdiego88@gmail.com"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "grunt": "^1.0.4",
+        "grunt-contrib-connect": "^2.1.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify-es": "^3.3.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "jquery": "^3.4.1",
+        "popper.js": "^1.15.0"
+    }
+}

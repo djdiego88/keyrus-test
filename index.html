@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego A. Castillo J.">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <title>Login - Keyrus</title>
+</head>
+<body>
+    <div class="container">
+        <div class="msg row align-items-center justify-content-center">
+            <div class="col-md-9">
+                <div class="mx-auto msg__box">
+                        <div class="msg__alert msg__alert--success alert alert-success d-none" role="alert">
+                            <i class="fas fa-check"></i>
+                            <span class="msg--success float-sm-right ml-2 ml-sm-0">¡Se ha enviado el formulario!</span>
+                        </div>
+                        <div class="msg__alert msg__alert--danger alert alert-danger d-none" role="alert">
+                            <i class="fas fa-times"></i>
+                            <span class="msg--error float-sm-right ml-2 ml-sm-0">Ha habido un error al enviar el formulario</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="login row align-items-center justify-content-center">
+            <div class="col-md-5">
+                <div class="login-box mx-auto">
+                    <div class="login-box__title">Entrar a mi cuenta</div>
+                    <form id="form" class="login-box__form px-lg-5" novalidate>
+                        <div class="input-group mb-2">
+                            <input class="login-box__form--gray form-control py-2 border-right-0 border" type="email" name="email" id="email" placeholder="Email" data-validation="required email" required>
+                            <span class="input-group-append">
+                                <div class="input-group-text border login-box__form--gray"><i class="fas fa-user"></i></div>
+                            </span>
+                        </div>
+                        <div class="input-group mb-3">
+                                <input class="login-box__form--gray form-control py-2 border-right-0 border" type="password" name="password" id="password" placeholder="Contraseña"  data-validation="required" required>
+                            <span class="input-group-append">
+                                <div class="input-group-text border login-box__form--gray"><i class="fas fa-lock"></i></div>
+                            </span>
+                        </div>
+                        <input class="text-center btn btn-primary btn-primary--border mb-3" type="submit" value="Entrar">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rememberme" id="rememberme">
+                            <label class="form-check-label" for="rememberme">Mantenerme conectado</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-footer mt-3">
+                    <div class="login-footer__text text-center mb-2">
+                        <a class="login-footer__link" href="#"><span class="login-footer__link--gray">¿Necesitas una cuenta?</span> Regístrate</a>
+                    </div>
+                    <div class="login-footer__text login-footer__text--small text-center">
+                        ¿Olvidaste tu contraseña?
+                        <a class="login-footer__link login-footer__link--nounderline" href="#">Haz clic aquí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer row align-items-center justify-content-center mt-5">
+            <div class="col-md-7">
+                <div class="info mx-auto">
+                    <i class="fas fa-info float-left"></i><span class="info__copyright">Keyrus - Diego Castillo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/script.min.js"></script>
+</body>
+</html>
